@@ -24,7 +24,7 @@ app.use(express.json());
 
 
 const allowedOrigins = [
-  'https://book-verse-backend.vercel.app/api', // Replace with your actual frontend URL
+  'https://book-verse-frontend-mauve.vercel.app/', // Replace with your actual frontend URL
   'http://localhost:3000' // For local development, optional
 ];
 
