@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cors());
 
 
-// Add this route handler for the root /api endpoint
+// Base url output
 app.get('/', (req, res) => {
   res.send('Server is running successfully');
 });
