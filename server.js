@@ -24,7 +24,7 @@ app.use(cors());
 
 
 // Add this route handler for the root /api endpoint
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Server is running successfully');
 });
 
