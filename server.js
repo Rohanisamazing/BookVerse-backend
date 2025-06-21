@@ -22,13 +22,15 @@ const app = express();
 app.use(express.json());
 
 
+
 const allowedOrigins = [
-  'http://localhost:3000',
-  'https://book-verse-frontend-alpha.vercel.app/' // <-- replace with your actual frontend Vercel URL
+  'https://book-verse-backend.vercel.app/api', // Replace with your actual frontend URL
+  'http://localhost:3000' // For local development, optional
 ];
 
 app.use(cors({
-  origin: allowedOrigins
+  origin: allowedOrigins,
+  credentials: true // If you use cookies or authentication
 }));
 
 
