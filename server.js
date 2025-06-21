@@ -20,7 +20,16 @@ connectDB();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+
+
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://book-verse-frontend-alpha.vercel.app/' // <-- replace with your actual frontend Vercel URL
+];
+
+app.use(cors({
+  origin: allowedOrigins
+}));
 
 
 // Base url output
